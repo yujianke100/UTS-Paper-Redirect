@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         UTS Redirect ACM and IEEE DOI
+// @name         UTS Redirect ACM and IEEE
 // @namespace    https://github.com/yujianke100/UTS-Paper-Redirect
 // @version      1.0
 // @description  Automatically redirect from ACM and IEEE to UTS Library.
