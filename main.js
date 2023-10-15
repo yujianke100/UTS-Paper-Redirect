@@ -7,6 +7,7 @@
 // @match        https://dl.acm.org/doi/*
 // @match        https://ieeexplore.ieee.org/document/*
 // @grant        none
+// @license MIT
 // ==/UserScript==
 
 (function() {
