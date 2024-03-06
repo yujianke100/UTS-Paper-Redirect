@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UNSW Library Redirect
 // @namespace    https://github.com/yujianke100/University-Library-Redirect/tree/UNSW
-// @version      1.0.0
+// @version      1.0.1
 // @description  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UNSW Library.
 // @author       Jianke Yu
 // @match        https://dl.acm.org/*
