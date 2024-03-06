@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         UTS Library Redirect
 // @namespace    https://github.com/yujianke100/University-Library-Redirect/tree/UTS
-// @version      1.0.1
+// @version      1.0.2
 // @description  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UTS Library.
 // @author       Jianke Yu
 // @match        https://dl.acm.org/*
