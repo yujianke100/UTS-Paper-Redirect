@@ -14,17 +14,15 @@
 // @match        https://www.sciencedirect.com/*
 // @grant        none
 // @license MIT
-// @downloadURL https://update.greasyfork.org/scripts/489131/UNSW%20Library%20Redirect.user.js
-// @updateURL https://update.greasyfork.org/scripts/489131/UNSW%20Library%20Redirect.meta.js
 // ==/UserScript==
-
+ 
 (function() {
     'use strict';
-
+ 
     var currentURL = window.location.href;
     var newURL;
     var proxySuffix = ".wwwproxy1.library.unsw.edu.au";
-
+ 
     if (currentURL.startsWith("https://dl.acm.org/")) {
             newURL = currentURL.replace("https://dl.acm.org/", "https://dl-acm-org" + proxySuffix + "/") + "?redirected=true";
         } else if (currentURL.startsWith("https://ieeexplore.ieee.org/")) {
@@ -34,6 +32,6 @@
         } else if (currentURL.startsWith("https://www.sciencedirect.com/")) {
             newURL = currentURL.replace("https://www.sciencedirect.com/", "https://www-sciencedirect-com" + proxySuffix + "/") + "?redirected=true";
         }
-
+ 
     window.location.href = newURL;
 })();
