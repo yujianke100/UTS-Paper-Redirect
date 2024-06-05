@@ -2,7 +2,8 @@
 // @name         UNSW Library Redirect
 // @namespace    https://github.com/yujianke100/University-Library-Redirect/tree/UNSW
 // @version      1.1.0
-// @description  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UNSW Library.
+// @description:en  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UNSW Library.
+// @description:zh  自动将ACM、IEEE、Springer和ScienceDirect网站重定向至UNSW图书馆。
 // @author       Jianke Yu
 // @match        https://dl.acm.org/*
 // @match        https://ieeexplore.ieee.org/*
