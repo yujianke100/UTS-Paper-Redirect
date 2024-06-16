@@ -1,9 +1,7 @@
 // ==UserScript==
 // @name         UTS Library Redirect
-// @name:en      UTS Library Redirect
-// @name:zh-CN   重定向至UTS图书馆
 // @namespace    https://github.com/yujianke100/University-Library-Redirect/tree/UTS
-// @version      1.1.3
+// @version      1.1.4
 // @description  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UTS Library.
 // @description:en  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UTS Library.
 // @description:zh-CN  自动将ACM、IEEE、Springer和ScienceDirect网站重定向至UTS图书馆。
@@ -25,7 +23,7 @@
  
     // Function to check if the URL has already been redirected
     function isRedirected(url) {
-        return url.includes(proxySuffix) || url.includes("redirected=true");
+        return url.includes(proxySuffix) || url.includes("redirected=true") || url.includes("%3Fredirected%3Dtrue") || url.includes("arnumber=");
     }
 
     if (!isRedirected(currentURL)) {
