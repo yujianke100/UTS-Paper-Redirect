@@ -1,10 +1,8 @@
 // ==UserScript==
 // @name         UTS Library Redirect
 // @namespace    https://github.com/yujianke100/University-Library-Redirect/tree/UTS
-// @version      1.1.4
+// @version      1.1.5
 // @description  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UTS Library.
-// @description:en  Automatically redirect from ACM, IEEE, Springer and ScienceDirect to UTS Library.
-// @description:zh-CN  自动将ACM、IEEE、Springer和ScienceDirect网站重定向至UTS图书馆。
 // @author       Jianke Yu
 // @match        https://dl.acm.org/*
 // @match        https://ieeexplore.ieee.org/*
@@ -25,7 +23,7 @@
     function isRedirected(url) {
         return url.includes(proxySuffix) || url.includes("redirected=true") || url.includes("%3Fredirected%3Dtrue") || url.includes("arnumber=");
     }
-
+ 
     if (!isRedirected(currentURL)) {
         if (currentURL.startsWith("https://dl.acm.org/")) {
             newURL = currentURL.replace("https://dl.acm.org/", "https://dl-acm-org" + proxySuffix + "/") + "?redirected=true";
@@ -36,7 +34,7 @@
         } else if (currentURL.startsWith("https://www.sciencedirect.com/")) {
             newURL = currentURL.replace("https://www.sciencedirect.com/", "https://www-sciencedirect-com" + proxySuffix + "/") + "?redirected=true";
         }
-
+ 
         if (newURL) {
             window.location.href = newURL;
         }
